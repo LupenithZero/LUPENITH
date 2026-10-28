@@ -1,0 +1,44 @@
+name: Technical project idea
+description: Propose a small, useful open-source technology task
+title: "[Technical idea]: "
+labels: ["project-idea", "needs-discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This project is early-stage. Please focus on a concrete user problem and consider existing projects before proposing a new product.
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem
+      description: Who experiences this problem, and in what situation?
+    validations:
+      required: true
+  - type: textarea
+    id: current_options
+    attributes:
+      label: Existing tools or projects
+      description: Which alternatives already exist? Link them if possible.
+    validations:
+      required: true
+  - type: textarea
+    id: smallest_step
+    attributes:
+      label: Smallest useful milestone
+      description: What could be completed and tested in a few weeks?
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks, privacy, and maintenance
+      description: What could go wrong? Who would maintain it?
+    validations:
+      required: false
+  - type: input
+    id: license
+    attributes:
+      label: License considerations
+      placeholder: Existing project's license or proposed license, if known
+    validations:
+      required: false

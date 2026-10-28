@@ -1,0 +1,53 @@
+name: Charter or governance feedback
+description: Suggest a change or raise a concern about the draft charter or governance model
+title: "[Charter feedback]: "
+labels: ["documentation", "governance"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The charter is a draft. Critical feedback is welcome. Please do not post private or sensitive personal information.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Human rights and freedom of conscience
+        - Evidence and scientific claims
+        - Governance and elections
+        - AI governance
+        - Privacy and security
+        - Ethics and conduct
+        - Economic and social support
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What needs improvement?
+      description: Quote the relevant section or give a heading.
+      placeholder: Explain the ambiguity, contradiction, missing protection, or impractical requirement.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested change
+      description: Include alternative wording if you have it.
+    validations:
+      required: false
+  - type: textarea
+    id: risks
+    attributes:
+      label: Possible risks or unintended effects
+      description: How could the current or proposed rule be misused?
+    validations:
+      required: false
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources or further reading
+      render: markdown
+    validations:
+      required: false

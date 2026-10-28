@@ -1,0 +1,21 @@
+# Local secrets and environment configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Operating-system and editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Common local build/test output (adjust when a real software project is added)
+/build/
+/dist/
+/coverage/
